@@ -1,0 +1,72 @@
+<!-- navbar -->
+<nav class="navbar fixed-top navbar-expand-lg">
+  <div class="container-fluid">
+    <!-- home icon & routerlink -->
+    <a routerLink="home"
+    >
+      <span>Home</span>
+      <span>
+        <i class="bi bi-house-door-fill"
+           aria-hidden="true"></i>
+      </span>
+    </a>
+    <!-- toogle -->
+    <button class="navbar-toggler navbar-dark"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon navbar-dark"></span>
+    </button>
+    <!--nav right side  -->
+    <div class="collapse navbar-collapse "
+         id="navbarNavDropdown"
+    >
+      <ul class="navbar-nav">
+        <!-- courses icon & routerlink -->
+        <a routerLink="courses">
+          <span>Cursos</span>
+          <span>
+            <i class="bi bi-book-half"
+               aria-hidden="true"
+            ></i>
+          </span>
+        </a>
+      </ul>
+      <!-- navbar dropdown menu -->
+      <ul class="navbar-nav navbar-dark right">
+        <li class="nav-item dropdown ">
+          <!-- profile icon menu -->
+          <a class="nav-link dropdown-toggle "
+             href="#" role="button"
+             data-bs-toggle="dropdown"
+             aria-expanded="false"
+          >
+            <span>Perfil</span>
+            <span>
+              <i class="bi bi-person-circle"
+                 aria-hidden="true"></i>
+            </span>
+          </a>
+          <!-- dropdown menu -->
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item-text p-4  text-center text-decoration-none fw-bold">Bienvenido {{nombre.name}} {{nombre.lastName}} </a></li>
+            <li><a class="dropdown-item-text p-4  text-center text-decoration-none"> {{usuario?.email}}</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <!-- routerlink profile -->
+            <li><a class="dropdown-item text-center"
+                   routerLink="user/profile"
+                >Mis Cursos</a></li>
+                <!-- routerlink sign out(home) -->
+            <li><a class="dropdown-item text-center"
+                    routerLink="home"
+                >Cerrar Sesion</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

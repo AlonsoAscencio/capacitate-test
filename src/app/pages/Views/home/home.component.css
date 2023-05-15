@@ -1,0 +1,121 @@
+.container{
+  margin-top: 10rem;
+  width: 100%;
+  margin-bottom: 10rem;
+}
+.contenedor-contenido{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 25px;
+  height: 800px;
+  background-image: linear-gradient(to top, #dfe9f3 0%, rgba(255, 255, 255, 0.397) 100%);
+}
+.columna-img{
+  padding: 12px 24px!important;
+  float: left;
+  width: 50%;
+  height: auto;
+}
+.columna-img img{
+  width: 70%;
+  height: auto;
+  border-radius: 25px;
+}
+.columna-img img:hover{
+  filter: brightness(85%);
+  cursor: pointer;
+}
+.contenido-acerca h1, .contenido-acerca h5{
+  margin-top: 5%;
+  margin-right: 5%;
+  text-align: justify;
+  color: rgb(70, 71, 71);
+}
+
+.curso:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* responsive */
+
+@media(max-width: 1024px) {
+  .container{
+    margin-top: 3rem;
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+  .contenedor-contenido{
+    padding-bottom: 50px;
+    border-radius: 25px;
+
+    background-image: linear-gradient(to top, #dfe9f3 0%, rgba(255, 255, 255, 0.397) 100%);
+  }
+
+  .columna-img img {
+    width: 100%;
+  object-fit: cover;
+  }
+  .contenido-acerca h1, .contenido-acerca h5{
+    margin-left: 10px;
+    margin-left: 10px;
+  }
+}
+
+@media(max-width: 768px) {
+  .container{
+    margin-top: 3rem;
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+  .contenedor-contenido{
+    padding-bottom: 50px;
+    border-radius: 25px;
+    height: 80%;
+    background-image: linear-gradient(to top, #dfe9f3 0%, rgba(255, 255, 255, 0.397) 100%);
+  }
+  .subcontendor-contenido{
+    display: flex;
+    flex-direction: column;
+  }
+  .columna-img{
+    width: 100%;
+  }
+  .columna-img img {
+    width: 100%;
+  object-fit: cover;
+  }
+  .contenido-acerca h1, .contenido-acerca h5{
+    margin-left: 10px;
+    margin-left: 10px;
+  }
+}
+
+@media(max-width: 375px) {
+  .container{
+    margin-top: 3rem;
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+  .contenedor-contenido{
+    padding-bottom: 50px;
+    border-radius: 25px;
+    height: 900px;
+    background-image: linear-gradient(to top, #dfe9f3 0%, rgba(255, 255, 255, 0.397) 100%);
+  }
+  .subcontendor-contenido{
+    display: flex;
+    flex-direction: column;
+  }
+  .columna-img{
+    width: 100%;
+  }
+  .columna-img img {
+    width: 100%;
+  object-fit: cover;
+  }
+  .contenido-acerca h1, .contenido-acerca h5{
+    margin-left: 10px;
+    margin-left: 10px;
+  }
+}

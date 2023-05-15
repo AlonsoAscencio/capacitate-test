@@ -1,0 +1,39 @@
+      <!-- cursos filtrados-->
+      <div class="cursos">
+        <!-- title -->
+        <h1 class="text-center">
+          {{ titulo | titlecase}}
+        </h1>
+        <!-- container courses -->
+        <ul class="container">
+          <!-- for courses complete -->
+          <a *ngFor="let curso of cursosEnProgreso">
+          <!-- card container -->
+          <div class="card d-flex animate__animated animate__zoomIn">
+            <!-- percentage course -->
+            <h5
+              [style.background-color]="curso.course.sector.colorTheme"
+              >{{ curso.advance === 100 ? 'Completado' : curso.advance + '%' }}
+            </h5>
+            <!-- icon + color api -->
+            <img
+              class="icono"
+              [src]="curso.course.imageUrl"
+              [alt]="curso.course.name"
+              [style.background-color]="curso.course.sector.colorTheme"
+            >
+            <!-- card text -->
+            <div
+              class="card-text"
+              [style.background-color]="curso.course.sector.colorTheme"
+            >
+              <!-- name course -->
+              <h5
+                class="nombre_curso"
+                >{{ curso.course.name }}
+              </h5>
+            </div>
+          </div>
+          </a>
+        </ul>
+      </div>

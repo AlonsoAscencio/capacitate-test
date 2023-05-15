@@ -1,0 +1,52 @@
+.box {
+  color: #F1F6F9;
+  position: relative;
+  height: 90%;
+}
+h1 {
+  text-align: center;
+}
+ul{
+  height: 90%;
+  justify-content: baseline;
+}
+
+p:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* responsive */
+@media(min-width: 1025px) {
+  p{
+    font-size: 11px;
+    margin-left: 32px;
+  }
+}
+
+@media(max-width: 1024px) {
+  p{
+    font-size: 12px;
+    margin-left: 32px;
+  }
+}
+
+@media(max-width: 768px) {
+  p{
+    font-size: 13px;
+    margin-left: 32px;
+  }
+}
+
+@media(max-width: 375px) {
+
+  .box {
+    box-sizing: border-box;
+  }
+  p{
+    font-size: 10px;
+    padding-right: 37px;
+    margin-left: 10px;
+  }
+
+}

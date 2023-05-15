@@ -1,21 +1,20 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Inscription } from '../interfaces/profile.interface';
+import { User } from '../interfaces/profile.interface';
 
 
 
 @Injectable({providedIn: 'root'})
 
-export class CourseService {
+export class ProfileService {
 
   constructor(private http: HttpClient) { }
 
-  public
-
-  loadCourse() {
+  /* function http request*/
+  loadProfile() {
     const url = 'https://besvc.capacitateparaelempleo.org/api/inscriptions/TestReport'
 
-    return this.http.get<Inscription[]>( url )
+    return this.http.get<User>( url )
   }
 
 

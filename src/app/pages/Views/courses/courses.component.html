@@ -1,0 +1,26 @@
+<div class="cursos">
+  <h1 class="text-center"> {{ titulo | titlecase}} </h1>
+  <ul class="container">
+    <!-- for cursos -->
+    <a *ngFor="let curso of cursos"
+    >
+    <!-- card -->
+    <div class="card d-flex animate__animated animate__fadeIn">
+      <!-- card image -->
+      <img class="icono"
+           [src]="curso.course.imageUrl"
+           [alt]="curso.course.name"
+           [style.background-color]="curso.course.sector.colorTheme"
+      >
+      <!-- card text -->
+      <div class="card-text"
+           [style.background-color]="curso.course.sector.colorTheme"
+      >
+      <!-- course name -->
+        <h5>{{curso.course.name}}</h5>
+      </div>
+    </div>
+
+    </a>
+  </ul>
+</div>
